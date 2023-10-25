@@ -11,7 +11,7 @@
       with_sequence: "count={{ num_messages }}"
 
     - ansible.builtin.wait_for:
-        timeout: 3600
+        timeout: 14460
         
     - debug:
           msg: "{{ chatty_message }}"
