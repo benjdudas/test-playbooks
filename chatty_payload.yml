@@ -10,8 +10,8 @@
           msg: "{{ chatty_message }}"
       with_sequence: "count={{ num_messages }}"
 
-    - ansible.builtin.wait_for:
-        timeout: 14460
+    - ansible.builtin.pause:
+        minutes: 120
         
     - debug:
           msg: "{{ chatty_message }}"
