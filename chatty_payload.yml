@@ -9,9 +9,6 @@
     - debug:
           msg: "{{ chatty_message }}"
       with_sequence: "count={{ num_messages }}"
-
-    - ansible.builtin.pause:
-        minutes: 300
         
     - debug:
           msg: "{{ chatty_message }}"
